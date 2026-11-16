@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>🌤️ Weather App</h1>
+    <p class="sub">Free weather data from Open-Meteo — no API key needed.</p>
+    <form id="search-form">
+      <input id="city-input" type="text" placeholder="Enter a city, e.g. Karachi" required>
+      <button type="submit">Search</button>
+    </form>
+    <div id="status" class="status"></div>
+    <div id="result" class="result" hidden>
+      <h2 id="place-name"></h2>
+      <p class="temp"><span id="temp"></span>°C</p>
+      <p id="condition"></p>
+      <ul>
+        <li>💧 Humidity: <span id="humidity"></span>%</li>
+        <li>💨 Wind: <span id="wind"></span> km/h</li>
+        <li>🔺 High: <span id="high"></span>°C &nbsp; 🔻 Low: <span id="low"></span>°C</li>
+      </ul>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
